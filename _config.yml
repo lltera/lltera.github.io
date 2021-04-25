@@ -97,7 +97,7 @@ author:
   name             : "Tera"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "noob"
-  location         : "Seoul/Korea"
+  location         : "Seoul, Korea"
   email            : "dlrmslthem@naver.com"
   links:
     - label: "Email"
@@ -114,10 +114,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/lltera"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/youngjin_2"
 
 # Site Footer
 footer:
@@ -274,6 +274,7 @@ defaults:
       path: ""
       type: posts
     values:
+      show_date: true
       layout: single
       author_profile: true
       read_time: true
