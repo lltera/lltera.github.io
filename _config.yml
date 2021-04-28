@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Tera"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : #"/assets/images/bio-photo.jpg"
   bio              : "noob"
   location         : "Seoul, Korea"
   email            : "dlrmslthem@naver.com"
