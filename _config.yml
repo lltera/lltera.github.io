@@ -98,7 +98,7 @@ author:
   avatar           : #"/assets/images/bio-photo.jpg"
   bio              : "noob"
   location         : "Seoul, Korea"
-  email            : "dlrmslthem@naver.com"
+  email            : #"dlrmslthem@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
