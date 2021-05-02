@@ -1,3 +1,13 @@
+---
+layout: splash
+title:  "Sorting and Searching in Array"
+subtitle: "2. Sorting and Searching in Array"
+categories:
+    - Algorithms
+tags:
+    - Algorithms
+author_profile: true
+---
 # Sorting and Searching in Array
 
 **Seraching** then means finding a record in the array that has a specified value in its key field.
@@ -173,7 +183,3 @@ def binary_search(L, x):
     return -1
 ```
 
-
-```python
-
-```
