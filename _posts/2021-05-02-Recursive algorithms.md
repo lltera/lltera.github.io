@@ -1,3 +1,14 @@
+---
+layout: splash
+title:  "Recursive algorithms"
+subtitle: "3. Recursive algorithms"
+categories:
+    - Algorithm
+tags:
+    - Algorithm
+author_profile: true
+---
+
 # Recursive algorithms
 A recursive algorithm is an algorithm which calls itself with "smaller (or simpler)" input values, and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input.
 
