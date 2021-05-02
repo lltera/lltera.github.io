@@ -1,12 +1,11 @@
 ---
 layout: splash
-title:  "Data Structure & Algorithm"
-subtitle: "0. start"
+title:  "Linear Array"
+subtitle: "1. Linear Array"
 categories:
     - Data Structure
 tags:
     - Data Structure
-    - Algorithm
 author_profile: true
 ---
 
