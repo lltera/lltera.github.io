@@ -1,3 +1,14 @@
+---
+layout: splash
+title:  "Complexity of Algorithms"
+subtitle: "4. Complexity of Algorithms"
+categories:
+    - Algorithm
+tags:
+    - Algorithm
+author_profile: true
+---
+
 # Complexity of Algorithms
 complexity of an algorithm is a measure of the amount of time and/or space required by an algorithm for an input of a given size n
 ## Time complexity
