@@ -16,12 +16,9 @@ A recursive algorithm is an algorithm which calls itself with "smaller (or simpl
 ### Binary trees
 Based on one node, when the left node is smaller and the right node is bigger, it has recursive properties.
 
+![Recursive algorithms1](images/2021-05-02-Recursive algorithms/Recursive algorithms1.JPG)
 
-```python
-
-```
-
-Let's search element '10' here. Start from node '12', '10' is smaller than '12'. So we go left side of '12' which is element '9'. Now elemet '10' is bigger than '9'. Then we go right side of it. We found it !
+Let's search element '10' here. Start from node '12', '10' is smaller than '12'. So we go left side of '12' which is element '9'. Now element '10' is bigger than '9'. Then we go right side of it. We found it !
 
 ### sum of the First n natural numbers
 
@@ -47,14 +44,14 @@ print(sum(a))
     2
     1
     15
-    
+
 
 #### compared recursive and iterative
 Recursive version : O(n)
 
 Iterative version : O(n)
 
-but the recursive algorithm, In some cases, it's not efficient because the function must be calleded continuosly.
+but the recursive algorithm, In some cases, it's not efficient because the function must be called continuously.
 
 
 ```python
@@ -79,20 +76,33 @@ def factorial(n):
 ```python
 # recursive way
 def fibonacci_rec(x):
-    if x==0:
-        return 0
-    if x==1:
-        return 1
-    else:
-        return solution(x-1) + solution(x-2)
+    if x<=0:
+        return x
+    return fibonacci_rec(x-1) + fibonacci_rec(x-2)
 # iterative way
 def fibonacci_iter(x):
-    a,b = 1,1
-    if x==0:
-        return 0
-    if x==1:
-        return 1
-    for i in range(1,x):
-        a,b = b, a+b
-    return a
+    if x<=1:
+        return x
+    else:
+        i = 2
+        a,b = 0,1
+        while i <= x:
+            a,b = b, a+b
+            i += 1
+        return a
+```
+
+### Binary search in recursive way
+
+```python
+def binary_search(L, x, l, u):
+	if l > u:
+    	return -1
+    mid = (l + u) // 2    
+    if x == L[mid]:        
+    	return mid    
+   	elif x < L[mid]:        
+   		return binary_search(L, x, l, mid-1)
+   	else:        
+   		return binary_search(L, x, mid+1, u)
 ```
