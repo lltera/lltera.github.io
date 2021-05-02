@@ -3,9 +3,9 @@ layout: splash
 title:  "Sorting and Searching in Array"
 subtitle: "2. Sorting and Searching in Array"
 categories:
-    - Algorithms
+    - Algorithm
 tags:
-    - Algorithms
+    - Algorithm
 author_profile: true
 ---
 # Sorting and Searching in Array
