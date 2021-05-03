@@ -18,7 +18,7 @@ ref : https://en.wikipedia.org/wiki/Gaussian_elimination
 
 ### Forward elimination
 
-![Forward elimination](images/2021-05-03-Gaussian%20elimination/Forward elimination.JPG)
+![Forward elimination](images/2021-05-03-Gaussian%20elimination/Forward%20elimination.JPG)
 
 ### Back-substitution
 
