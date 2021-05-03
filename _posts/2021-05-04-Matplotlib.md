@@ -118,7 +118,11 @@ plt.show()
 
 
 ```python
-# limit range of x and y axisx = np.arange(-10,10,0.01)plt.xlabel("x value")plt.ylabel("f(x) value")plt.axis([-5,5,0,25]) # [x_min,x_max,y_min,y_max]plt.plot(x,x**2)plt.show()
+# limit range of x and y axis
+x = np.arange(-10,10,0.01)
+plt.xlabel("x value")plt.ylabel("f(x) value")
+plt.axis([-5,5,0,25]) # [x_min,x_max,y_min,y_max]
+plt.plot(x,x**2)plt.show()
 ```
 
 
@@ -127,7 +131,14 @@ plt.show()
 
 
 ```python
-# set x and y axis intervalx = np.arange(-10,10,0.01)plt.xlabel("x value")plt.ylabel("f(x) value")plt.axis([-5,5,0,25])plt.xticks([i for i in range(-5,6,1)]) # set x axis interval, -5, -4, .... , 4, 5plt.yticks([i for i in range(0,27,3)]) # set y axis intervalplt.plot(x,x**2)plt.show()
+# set x and y axis interval
+x = np.arange(-10,10,0.01)
+plt.xlabel("x value")
+plt.ylabel("f(x) value")
+plt.axis([-5,5,0,25])
+plt.xticks([i for i in range(-5,6,1)]) # set x axis interval, -5, -4, .... , 4, 5
+plt.yticks([i for i in range(0,27,3)]) # set y axis interval
+plt.plot(x,x**2)plt.show()
 ```
 
 
@@ -136,7 +147,17 @@ plt.show()
 
 
 ```python
-# put Title !x = np.arange(-10,10,0.01)plt.xlabel("x value")plt.ylabel("f(x) value")plt.axis([-5,5,0,25])plt.xticks([i for i in range(-5,6,1)])plt.yticks([i for i in range(0,27,3)])plt.title("y = x^2 graph") # titleplt.plot(x,x**2, label = "trend") # legend of this plotplt.legend() # plot legend on graphplt.show()
+# put Title !
+x = np.arange(-10,10,0.01)
+plt.xlabel("x value")
+plt.ylabel("f(x) value")
+plt.axis([-5,5,0,25])
+plt.xticks([i for i in range(-5,6,1)])
+plt.yticks([i for i in range(0,27,3)])
+plt.title("y = x^2 graph") # title
+plt.plot(x,x**2, label = "trend") # legend of this plot
+plt.legend() # plot legend on graph
+plt.show()
 ```
 
 
@@ -149,7 +170,12 @@ plt.show()
 
 
 ```python
-x = np.arange(20) # 0 ~ 19y = np.random.randint(0, 10, 20) # Generate random numbers between 1 and 9, 20 times.plt.plot(x,y)plt.axis([0,20,0,10])plt.yticks([i for i in range(11)])plt.show()
+x = np.arange(20) # 0 ~ 19
+y = np.random.randint(0, 10, 20) # Generate random numbers between 1 and 9, 20 times.
+plt.plot(x,y)
+plt.axis([0,20,0,10])
+plt.yticks([i for i in range(11)])
+plt.show()
 ```
 
 
@@ -160,7 +186,8 @@ x = np.arange(20) # 0 ~ 19y = np.random.randint(0, 10, 20) # Generate random num
 
 
 ```python
-plt.scatter(x,y)plt.show()
+plt.scatter(x,y)
+plt.show()
 ```
 
 
@@ -173,7 +200,8 @@ plt.scatter(x,y)plt.show()
 
 
 ```python
-plt.boxplot(y)plt.show()
+plt.boxplot(y)
+plt.show()
 ```
 
 
@@ -184,7 +212,8 @@ plt.boxplot(y)plt.show()
 
 
 ```python
-plt.bar(x,y)plt.show()
+plt.bar(x,y)
+plt.show()
 ```
 
 
@@ -193,7 +222,10 @@ plt.bar(x,y)plt.show()
 
 
 ```python
-# set xtics againplt.bar(x,y)plt.xticks(np.arange(0,20,1))plt.show()
+# set xtics again
+plt.bar(x,y)
+plt.xticks(np.arange(0,20,1))
+plt.show()
 ```
 
 
@@ -206,7 +238,9 @@ plt.bar(x,y)plt.show()
 
 
 ```python
-plt.hist(y, bins = np.arange(0,10,2))plt.xticks(np.arange(0,10,2))plt.show()
+plt.hist(y, bins = np.arange(0,10,2))
+plt.xticks(np.arange(0,10,2))
+plt.show()
 ```
 
 
@@ -219,7 +253,9 @@ plt.hist(y, bins = np.arange(0,10,2))plt.xticks(np.arange(0,10,2))plt.show()
 
 
 ```python
-z = [100, 300, 200, 400]plt.pie(z, labels = ['one','two','three','four'])plt.show()
+z = [100, 300, 200, 400]
+plt.pie(z, labels = ['one','two','three','four'])
+plt.show()
 ```
 
 
@@ -248,7 +284,11 @@ import seaborn as sns
 
 
 ```python
-# in HIstogramx = np.arange(0,22,2)y = np.random.randint(0,20,20)plt.hist(y, bins= x)plt.show()
+# in HIstogram
+x = np.arange(0,22,2)
+y = np.random.randint(0,20,20)
+plt.hist(y, bins= x)
+plt.show()
 ```
 
 
@@ -257,7 +297,9 @@ import seaborn as sns
 
 
 ```python
-# Kernel Density Plot ( kdeplot )sns.kdeplot(y)plt.show()
+# Kernel Density Plot ( kdeplot )
+sns.kdeplot(y)
+plt.show()
 ```
 
 
@@ -280,7 +322,8 @@ sns.kdeplot(y,shade = True) # Fill graphplt.show()
 
 
 ```python
-vote_df = pd.DataFrame({"name":['Andy','Bob','Cat'],"vote":[True,True,False]})vote_df
+vote_df = pd.DataFrame({"name":['Andy','Bob','Cat'],"vote":[True,True,False]})
+vote_df
 ```
 
 
@@ -330,7 +373,10 @@ vote_df = pd.DataFrame({"name":['Andy','Bob','Cat'],"vote":[True,True,False]})vo
 
 
 ```python
-# in matplotlib barplot# figure out the number of False and Truevote_count = vote_df.groupby('vote').count()vote_count
+# in matplotlib barplot
+# figure out the number of False and True
+vote_count = vote_df.groupby('vote').count()
+vote_count
 ```
 
 
@@ -376,7 +422,8 @@ vote_df = pd.DataFrame({"name":['Andy','Bob','Cat'],"vote":[True,True,False]})vo
 
 
 ```python
-plt.bar(x=[False,True],height=vote_count['name'])plt.show()
+plt.bar(x=[False,True],height=vote_count['name'])
+plt.show()
 ```
 
 
@@ -385,7 +432,9 @@ plt.bar(x=[False,True],height=vote_count['name'])plt.show()
 
 
 ```python
-# usage sns.countplotsns.countplot(x = vote_df['vote'])plt.show()
+# usage sns.countplot
+sns.countplot(x = vote_df['vote'])
+plt.show()
 ```
 
 
@@ -538,7 +587,9 @@ covid.head(5)
 
 
 ```python
-s = sns.catplot(x='WHO Region',y='Confirmed',data=covid)s.fig.set_size_inches(10,6)plt.show()
+s = sns.catplot(x='WHO Region',y='Confirmed',data=covid)
+s.fig.set_size_inches(10,6)
+plt.show()
 ```
 
 
@@ -552,7 +603,8 @@ s = sns.catplot(x='WHO Region',y='Confirmed',data=covid)s.fig.set_size_inches(10
 
 
 ```python
-sns.stripplot(x='WHO Region',y='Recovered',data=covid)plt.show()
+sns.stripplot(x='WHO Region',y='Recovered',data=covid)
+plt.show()
 ```
 
 
@@ -561,7 +613,8 @@ sns.stripplot(x='WHO Region',y='Recovered',data=covid)plt.show()
 
 
 ```python
-# cf) swarmplotsns.swarmplot(x='WHO Region',y='Recovered',data=covid)plt.show()
+# cf) swarmplotsns.swarmplot(x='WHO Region',y='Recovered',data=covid)
+plt.show()
 ```
 
 
@@ -829,7 +882,8 @@ covid.corr()
 
 
 ```python
-sns.heatmap(covid.corr())plt.show()
+sns.heatmap(covid.corr())
+plt.show()
 ```
 
 
