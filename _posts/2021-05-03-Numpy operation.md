@@ -1,3 +1,15 @@
+---
+layout: splash
+title:  "Numpy operation"
+subtitle: "Numpy operation"
+categories:
+    - python
+tags:
+    - numpy
+    - data
+author_profile: true
+---
+
 # Numpy operation
 
 ## vector - scalar operation
