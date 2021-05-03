@@ -1,15 +1,7 @@
----
-layout: splash
-title:  "Numpy operation"
-subtitle: "Numpy operation"
-categories:
-    - data analysis
-tags:
-    - data analysis
-author_profile: true
----
 # Matplotlib
+
 ## 1. start matplotlib
+
 -  A comprehensive library for creating static, animated, and interactive visualizations in Python.
 -  Active by `%matplotlib inline`
 
@@ -31,7 +23,7 @@ plt.show() # displays plt
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_3_0.png)
+![png](./images/2021-05-04-Matplotlib/output_3_0.png)
 
 
 ### Figsize : Adjusting the size of the frame
@@ -44,7 +36,7 @@ plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_5_0.png)
+![png](./images/2021-05-04-Matplotlib/output_5_0.png)
 
 
 
@@ -55,7 +47,7 @@ plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_6_0.png)
+![png](./images/2021-05-04-Matplotlib/output_6_0.png)
 
 
 ### Graphing Quadratic Equations with plot()
@@ -68,7 +60,7 @@ plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_8_0.png)
+![png](./images/2021-05-04-Matplotlib/output_8_0.png)
 
 
 
@@ -83,7 +75,7 @@ plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_9_0.png)
+![png](./images/2021-05-04-Matplotlib/output_9_0.png)
 
 
 
@@ -95,7 +87,7 @@ plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_10_0.png)
+![png](./images/2021-05-04-Matplotlib/output_10_0.png)
 
 
 
@@ -111,64 +103,34 @@ plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_11_0.png)
+![png](./images/2021-05-04-Matplotlib/output_11_0.png)
 
 
 
 ```python
-# limit range of x and y axis
-x = np.arange(-10,10,0.01)
-plt.xlabel("x value")
-plt.ylabel("f(x) value")
-
-plt.axis([-5,5,0,25]) # [x_min,x_max,y_min,y_max]
-
-plt.plot(x,x**2)
-plt.show()
+# limit range of x and y axisx = np.arange(-10,10,0.01)plt.xlabel("x value")plt.ylabel("f(x) value")plt.axis([-5,5,0,25]) # [x_min,x_max,y_min,y_max]plt.plot(x,x**2)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_12_0.png)
+![png](./images/2021-05-04-Matplotlib/output_12_0.png)
 
 
 
 ```python
-# set x and y axis interval
-x = np.arange(-10,10,0.01)
-plt.xlabel("x value")
-plt.ylabel("f(x) value")
-plt.axis([-5,5,0,25])
-
-plt.xticks([i for i in range(-5,6,1)]) # set x axis interval, -5, -4, .... , 4, 5
-plt.yticks([i for i in range(0,27,3)]) # set y axis interval
-
-plt.plot(x,x**2)
-plt.show()
+# set x and y axis intervalx = np.arange(-10,10,0.01)plt.xlabel("x value")plt.ylabel("f(x) value")plt.axis([-5,5,0,25])plt.xticks([i for i in range(-5,6,1)]) # set x axis interval, -5, -4, .... , 4, 5plt.yticks([i for i in range(0,27,3)]) # set y axis intervalplt.plot(x,x**2)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_13_0.png)
+![png](./images/2021-05-04-Matplotlib/output_13_0.png)
 
 
 
 ```python
-# put Title !
-x = np.arange(-10,10,0.01)
-plt.xlabel("x value")
-plt.ylabel("f(x) value")
-plt.axis([-5,5,0,25])
-plt.xticks([i for i in range(-5,6,1)])
-plt.yticks([i for i in range(0,27,3)])
-
-plt.title("y = x^2 graph") # title
-plt.plot(x,x**2, label = "trend") # legend of this plot
-plt.legend() # plot legend on graph
-
-plt.show()
+# put Title !x = np.arange(-10,10,0.01)plt.xlabel("x value")plt.ylabel("f(x) value")plt.axis([-5,5,0,25])plt.xticks([i for i in range(-5,6,1)])plt.yticks([i for i in range(0,27,3)])plt.title("y = x^2 graph") # titleplt.plot(x,x**2, label = "trend") # legend of this plotplt.legend() # plot legend on graphplt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_14_0.png)
+![png](./images/2021-05-04-Matplotlib/output_14_0.png)
 
 
 ## 3.  Matplotlib Case Study
@@ -177,100 +139,87 @@ plt.show()
 
 
 ```python
-x = np.arange(20) # 0 ~ 19
-y = np.random.randint(0, 10, 20) # Generate random numbers between 1 and 9, 20 times.
-
-plt.plot(x,y)
-
-plt.axis([0,20,0,10])
-plt.yticks([i for i in range(11)])
-
-plt.show()
+x = np.arange(20) # 0 ~ 19y = np.random.randint(0, 10, 20) # Generate random numbers between 1 and 9, 20 times.plt.plot(x,y)plt.axis([0,20,0,10])plt.yticks([i for i in range(11)])plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_16_0.png)
+![png](./images/2021-05-04-Matplotlib/output_16_0.png)
 
 
 ### Scatter Plot
 
 
 ```python
-plt.scatter(x,y)
-plt.show()
+plt.scatter(x,y)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_18_0.png)
+![png](./images/2021-05-04-Matplotlib/output_18_0.png)
 
 
 ### Box Plot
+
 ![boxplot](https://aiaspirant.com/wp-content/uploads/2019/07/box-and-whisker-plot.jpg)
 
 
 ```python
-plt.boxplot(y)
-plt.show()
+plt.boxplot(y)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_20_0.png)
+![png](./images/2021-05-04-Matplotlib/output_20_0.png)
 
 
 ### Bar Plot
 
 
 ```python
-plt.bar(x,y)
-plt.show()
+plt.bar(x,y)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_22_0.png)
+![png](./images/2021-05-04-Matplotlib/output_22_0.png)
 
 
 
 ```python
-# set xtics again
-plt.bar(x,y)
-plt.xticks(np.arange(0,20,1))
-plt.show()
+# set xtics againplt.bar(x,y)plt.xticks(np.arange(0,20,1))plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_23_0.png)
+![png](./images/2021-05-04-Matplotlib/output_23_0.png)
 
 
 ### Histogram
+
 -  an approximate representation of the distribution of numerical data
 
 
 ```python
-plt.hist(y, bins = np.arange(0,10,2))
-plt.xticks(np.arange(0,10,2))
-plt.show()
+plt.hist(y, bins = np.arange(0,10,2))plt.xticks(np.arange(0,10,2))plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_25_0.png)
+![png](./images/2021-05-04-Matplotlib/output_25_0.png)
 
 
 ### Pie Chart
+
 -  useful to see the ratio
 
 
 ```python
-z = [100, 300, 200, 400]
-plt.pie(z, labels = ['one','two','three','four'])
-plt.show()
+z = [100, 300, 200, 400]plt.pie(z, labels = ['one','two','three','four'])plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_27_0.png)
+![png](./images/2021-05-04-Matplotlib/output_27_0.png)
 
 
 ## 4.  Seaborn
+
 ###  Python data visualization library based on matplotlib
+
 -  Kernel Density Plot
 -  Count Plot
 -  Cat Plot
@@ -283,51 +232,45 @@ import seaborn as sns
 ```
 
 ### Kernel Density Plot
+
 -  Graphs Continuous Distributions like histogram but in curved line
 -  `sns.kdeplot()`
 
 
 ```python
-# in HIstogram
-x = np.arange(0,22,2)
-y = np.random.randint(0,20,20)
-plt.hist(y, bins= x)
-plt.show()
+# in HIstogramx = np.arange(0,22,2)y = np.random.randint(0,20,20)plt.hist(y, bins= x)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_31_0.png)
+![png](./images/2021-05-04-Matplotlib/output_31_0.png)
 
 
 
 ```python
-# Kernel Density Plot ( kdeplot )
-sns.kdeplot(y)
-plt.show()
+# Kernel Density Plot ( kdeplot )sns.kdeplot(y)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_32_0.png)
+![png](./images/2021-05-04-Matplotlib/output_32_0.png)
 
 
 
 ```python
-sns.kdeplot(y,shade = True) # Fill graph
-plt.show()
+sns.kdeplot(y,shade = True) # Fill graphplt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_33_0.png)
+![png](./images/2021-05-04-Matplotlib/output_33_0.png)
 
 
 ### Count Plot
+
 -  Visualize frequency in column
 -  `sns.countplot()`
 
 
 ```python
-vote_df = pd.DataFrame({"name":['Andy','Bob','Cat'],"vote":[True,True,False]})
-vote_df
+vote_df = pd.DataFrame({"name":['Andy','Bob','Cat'],"vote":[True,True,False]})vote_df
 ```
 
 
@@ -339,14 +282,11 @@ vote_df
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    .dataframe thead th {
-        text-align: right;
-    }
+
+    .dataframe tbody tr th {    vertical-align: top;}.dataframe thead th {    text-align: right;}
+
 </style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -373,16 +313,14 @@ vote_df
     </tr>
   </tbody>
 </table>
+
 </div>
 
 
 
 
 ```python
-# in matplotlib barplot
-# figure out the number of False and True
-vote_count = vote_df.groupby('vote').count()
-vote_count
+# in matplotlib barplot# figure out the number of False and Truevote_count = vote_df.groupby('vote').count()vote_count
 ```
 
 
@@ -394,14 +332,11 @@ vote_count
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    .dataframe thead th {
-        text-align: right;
-    }
+
+    .dataframe tbody tr th {    vertical-align: top;}.dataframe thead th {    text-align: right;}
+
 </style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -424,33 +359,31 @@ vote_count
     </tr>
   </tbody>
 </table>
+
 </div>
 
 
 
 
 ```python
-plt.bar(x=[False,True],height=vote_count['name'])
-plt.show()
+plt.bar(x=[False,True],height=vote_count['name'])plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_37_0.png)
+![png](./images/2021-05-04-Matplotlib/output_37_0.png)
 
 
 
 ```python
-# usage sns.countplot
-
-sns.countplot(x = vote_df['vote'])
-plt.show()
+# usage sns.countplotsns.countplot(x = vote_df['vote'])plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_38_0.png)
+![png](./images/2021-05-04-Matplotlib/output_38_0.png)
 
 
 ### Cat Plot
+
 -  useful to indicate the relationship between categorical and numerical data
 -  `sns.catplot()`
 
@@ -469,14 +402,11 @@ covid.head(5)
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    .dataframe thead th {
-        text-align: right;
-    }
+
+    .dataframe tbody tr th {    vertical-align: top;}.dataframe thead th {    text-align: right;}
+
 </style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -591,49 +521,47 @@ covid.head(5)
     </tr>
   </tbody>
 </table>
+
 </div>
 
 
 
 
 ```python
-s = sns.catplot(x='WHO Region',y='Confirmed',data=covid)
-s.fig.set_size_inches(10,6)
-plt.show()
+s = sns.catplot(x='WHO Region',y='Confirmed',data=covid)s.fig.set_size_inches(10,6)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_41_0.png)
+![png](./images/2021-05-04-Matplotlib/output_41_0.png)
 
 
 ### Strip Plot
+
 -  similar to Scatter plot
 -  `sns.stripplot()`
 
 
 ```python
-sns.stripplot(x='WHO Region',y='Recovered',data=covid)
-plt.show()
+sns.stripplot(x='WHO Region',y='Recovered',data=covid)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_43_0.png)
+![png](./images/2021-05-04-Matplotlib/output_43_0.png)
 
 
 
 ```python
-# cf) swarmplot
-sns.swarmplot(x='WHO Region',y='Recovered',data=covid)
-plt.show()
+# cf) swarmplotsns.swarmplot(x='WHO Region',y='Recovered',data=covid)plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_44_0.png)
+![png](./images/2021-05-04-Matplotlib/output_44_0.png)
 
 
 ### Heatmap
+
 -  Plot a matrix of data in color( useful to show correlations )
-- `sns.heatmap()`
+-  `sns.heatmap()`
 
 
 ```python
@@ -649,14 +577,11 @@ covid.corr()
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    .dataframe thead th {
-        text-align: right;
-    }
+
+    .dataframe tbody tr th {    vertical-align: top;}.dataframe thead th {    text-align: right;}
+
 </style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -887,15 +812,15 @@ covid.corr()
     </tr>
   </tbody>
 </table>
+
 </div>
 
 
 
 
 ```python
-sns.heatmap(covid.corr())
-plt.show()
+sns.heatmap(covid.corr())plt.show()
 ```
 
 
-![png](./image/2021-05-04-Matplotlib/output_47_0.png)
+![png](./images/2021-05-04-Matplotlib/output_47_0.png)
