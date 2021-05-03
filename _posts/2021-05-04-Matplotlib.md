@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 
 
 ```python
-plt.plot([1,2,3,4,5]) # plotting / y = x +1
+plt.plot([1,2,3,4,5]) # plotting / y = x +1 
 plt.show() # displays plt
 ```
 
@@ -40,8 +40,8 @@ plt.show() # displays plt
 
 
 ```python
-plt.figure(figsize=(6,6)) # Declare Frame of plotting
-plt.plot([1,2,3,4,5])
+plt.figure(figsize=(6,6)) # Declare Frame of plotting 
+plt.plot([1,2,3,4,5]) 
 plt.show()
 ```
 
