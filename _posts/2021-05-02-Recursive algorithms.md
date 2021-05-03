@@ -96,7 +96,7 @@ def fibonacci_iter(x):
 
 ```python
 def binary_search(L, x, l, u):
-	if l > u:
+  if l > u:
     	return -1
     mid = (l + u) // 2    
     if x == L[mid]:        
