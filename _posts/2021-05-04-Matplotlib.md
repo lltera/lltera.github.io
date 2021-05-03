@@ -1,3 +1,13 @@
+---
+layout: splash
+title:  "matplotlib"
+subtitle: "matplotlib"
+categories:
+    - data analysis
+tags:
+    - data analysis
+author_profile: true
+---
 # Matplotlib
 
 ## 1. start matplotlib
