@@ -26,11 +26,11 @@ U : upper triangular matrix
 
 ### Forward-substitution : calculate y
 
-![L](./images/2021-05-03-Matrix Decompositon/L.JPG)
+![L](./images/2021-05-03-Matrix%Decompositon/L.JPG)
 
 ### Back-substitution : calculate x
 
-![U](images/2021-05-03-Matrix Decompositon/U.JPG)
+![U](images/2021-05-03-Matrix%Decompositon/U.JPG)
 
 
 ### Advantage of LU decomposition
@@ -45,6 +45,3 @@ updating...
 updating...
 
 
-```python
-
-```
