@@ -75,8 +75,8 @@ plt.show()
 
 
 ```python
-# graphing with numpy.array
-# y = x^2
+# graphing with numpy.array 
+# y = x^2 
 x = np.array([1,2,3,4,5])# domain
 y = np.array([1,4,9,16,25])# f(x)
 
@@ -90,8 +90,8 @@ plt.show()
 
 
 ```python
-# np.arange(a,b,c)
-x = np.arange(-10,10,0.01)
+# np.arange(a,b,c) 
+x = np.arange(-10,10,0.01) 
 plt.plot(x,x**2)
 plt.show()
 ```
@@ -102,7 +102,7 @@ plt.show()
 
 
 ```python
-# labeling on x and y axis
+# labeling on x and y axis 
 x = np.arange(-10,10,0.01)
 
 plt.xlabel("x value")
