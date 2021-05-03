@@ -3,10 +3,9 @@ layout: splash
 title:  "Numpy operation"
 subtitle: "Numpy operation"
 categories:
-    - python
+    - data analysis
 tags:
-    - numpy
-    - data
+    - data analysis
 author_profile: true
 ---
 
