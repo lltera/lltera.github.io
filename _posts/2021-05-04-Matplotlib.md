@@ -1,3 +1,13 @@
+---
+layout: splash
+title:  "Numpy operation"
+subtitle: "Numpy operation"
+categories:
+    - data analysis
+tags:
+    - data analysis
+author_profile: true
+---
 # Matplotlib
 ## 1. start matplotlib
 -  A comprehensive library for creating static, animated, and interactive visualizations in Python.
