@@ -1,3 +1,14 @@
+---
+layout: splash
+title:  "Basic Pandas"
+subtitle: "Basic Pandas"
+categories:
+    - data analysis
+tags:
+    - data analysis
+author_profile: true
+---
+
 # Pandas
 
 ## 1. How to start Pandas
@@ -1760,9 +1771,3 @@ covid_by_region.mean() # sum() /  number of countries in each regions
     Western Pacific           18276.750000
     Name: Confirmed, dtype: float64
 
-
-
-
-```python
-
-```
