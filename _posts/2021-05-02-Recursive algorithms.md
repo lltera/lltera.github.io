@@ -15,8 +15,8 @@ A recursive algorithm is an algorithm which calls itself with "smaller (or simpl
 ## An example of a recursive algorithm.
 ### Binary trees
 Based on one node, when the left node is smaller and the right node is bigger, it has recursive properties.
-
-![Recursive algorithms](./images/2021-05-02-Recursive algorithms/Recursive algorithms1.JPG)
+ 
+![Recursive algorithms] (/images/2021-05-02-Recursive algorithms/Recursive algorithms1.JPG)
 
 Let's search element '10' here. Start from node '12', '10' is smaller than '12'. So we go left side of '12' which is element '9'. Now element '10' is bigger than '9'. Then we go right side of it. We found it !
 
