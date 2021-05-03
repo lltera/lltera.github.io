@@ -22,7 +22,7 @@ U : upper triangular matrix
 ### Usage of LU decomposition
 ### If Ax = b
 
-### ![Ax=b](images/2021-05-03-Matrix Decompositon/Ax=b.JPG)
+### ![Ax=b](./images/2021-05-03-Matrix Decompositon/Ax=b.JPG)
 
 ### Forward-substitution : calculate y
 
